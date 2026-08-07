@@ -32,14 +32,14 @@ const HeroSlide = () => {
         display: 'flex', flexDirection: 'column', height: '100%'
       }}>
         {/* TOP — Formal Invitation Text */}
-        <motion.div variants={fadeUp} style={{ padding: '36px 24px 0', textAlign: 'center', textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}>
-          <p style={{ color: 'rgba(255,255,255,1)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px', fontWeight: '500' }}>
+        <motion.div variants={fadeUp} className="pt-9 px-6 text-center drop-shadow-xl">
+          <p className="text-white text-xs md:text-sm tracking-[0.15em] uppercase mb-6 font-medium">
             In the Name of Allah<br />the Most Gracious & Most Merciful.
           </p>
-          <p style={{ color: 'rgba(255,255,255,1)', fontSize: '1.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '8px', fontWeight: 'bold' }}>
+          <p className="text-white text-lg md:text-2xl tracking-[0.15em] uppercase mb-2 font-bold">
             Mr. & Mrs. Abdul Rauf
           </p>
-          <p style={{ color: 'rgba(255,255,255,0.95)', fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', lineHeight: '1.6' }}>
+          <p className="text-white/95 text-[10px] md:text-xs tracking-[0.1em] uppercase leading-relaxed">
             call you to attend the Wedding Ceremony<br />for their Son
           </p>
         </motion.div>
@@ -48,30 +48,20 @@ const HeroSlide = () => {
         <div style={{ flex: 1, minHeight: '180px' }} />
 
         {/* BOTTOM — frosted glass block */}
-        <motion.div variants={fadeUp} style={{
-          background: 'rgba(15,8,2,0.22)',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)', // for Safari support
-          borderRadius: '16px',
-          padding: '24px 24px 36px',
-          margin: '0 12px 24px',
-          textAlign: 'center',
-          color: 'white',
-          border: '1px solid rgba(255,255,255,0.1)' // subtle border for glass effect
-        }}>
-          <h1 className="font-script" style={{ fontSize: '2.5rem', margin: '0', fontWeight: '400', lineHeight: 1.2 }}>
+        <motion.div variants={fadeUp} className="bg-[#0f0802]/20 backdrop-blur-md rounded-2xl p-6 pb-9 mx-3 mb-6 text-center text-white border border-white/10">
+          <h1 className="font-script text-4xl md:text-5xl m-0 font-normal leading-tight">
             <GoldText>Zubair Rauf</GoldText>
           </h1>
-          <div className="font-script" style={{ margin: '8px 0', fontSize: '1.5rem', color: 'rgba(255,255,255,0.8)' }}>
+          <div className="font-script my-2 text-2xl md:text-3xl text-white/80">
             <GoldText>&</GoldText>
           </div>
-          <h1 className="font-script" style={{ fontSize: '2.5rem', margin: '0', fontWeight: '400', lineHeight: 1.2 }}>
+          <h1 className="font-script text-4xl md:text-5xl m-0 font-normal leading-tight">
             <GoldText>Daughter of<br />Muhammad Javed</GoldText>
           </h1>
 
-          <div style={{ width: '40px', height: '1px', background: 'rgba(255,255,255,0.4)', margin: '20px auto' }} />
+          <div className="w-10 h-px bg-white/40 mx-auto my-5" />
 
-          <p style={{ letterSpacing: '0.1em', fontSize: '0.9rem', textTransform: 'uppercase', color: 'rgba(255,255,255,0.9)' }}>
+          <p className="tracking-[0.1em] text-[10px] md:text-xs uppercase text-white/90">
             Join us to celebrate
           </p>
         </motion.div>
