@@ -154,8 +154,9 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
         <motion.p
           animate={opened ? { opacity: 0 } : { opacity: [0.5, 1, 0.5] }}
           transition={opened ? { duration: 0.2 } : { duration: 2, repeat: Infinity }}
-          className="absolute bottom-[15%] font-serif text-lg md:text-xl text-[#dfb648] tracking-[0.2em] uppercase"
+          className="absolute bottom-[15%] font-serif text-lg md:text-xl text-[#dfb648] tracking-[0.2em] uppercase cursor-pointer"
           style={{ textShadow: '0 2px 8px rgba(0,0,0,0.8)' }}
+          onClick={handleTap}
         >
           {opened ? '' : 'Tap to Open'}
         </motion.p>
