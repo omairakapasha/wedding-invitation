@@ -16,7 +16,7 @@ const CountdownSlide = ({ targetDate = '2026-06-19T00:00:00', bgImage = '/couple
 
   return (
     <motion.div 
-      className="countdown-slide h-screen w-full flex flex-col items-center justify-center bg-cover bg-center text-white"
+      className="countdown-slide h-screen w-full flex flex-col items-center justify-center bg-cover bg-top md:bg-center text-white"
       style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgImage})` }}
       initial="hidden"
       whileInView="visible"

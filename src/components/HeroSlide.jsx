@@ -13,12 +13,9 @@ const HeroSlide = () => {
       variants={stagger}
     >
       {/* Background photo */}
-      <img src='/event_bg.png' alt="Wedding Background" style={{
-        position: 'absolute', inset: 0,
-        width: '100%', height: '100%',
-        objectFit: 'cover',
-        objectPosition: 'center'
-      }} />
+      <img src='/event_bg.png' alt="Wedding Background" 
+        className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
+      />
 
       {/* Dark gradient overlay to ensure text readability */}
       <div style={{

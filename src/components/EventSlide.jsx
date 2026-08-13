@@ -16,7 +16,7 @@ const EventSlide = ({
 }) => {
   return (
     <div 
-      className="event-slide min-h-screen w-full flex items-center justify-center p-6 md:p-8 bg-cover bg-center bg-no-repeat"
+      className="event-slide min-h-screen w-full flex items-center justify-center p-6 md:p-8 bg-cover bg-top md:bg-center bg-no-repeat"
       style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none', backgroundColor: '#fcfaf7' }}
     >
       <motion.div 
