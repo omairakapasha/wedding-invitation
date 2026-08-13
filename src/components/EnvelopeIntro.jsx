@@ -66,8 +66,8 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
             <div className="w-10 h-10 rounded-full border border-[#d4c5b5] flex items-center justify-center mb-3 shrink-0">
               <span className="font-serif text-[#a67c00]">ZR</span>
             </div>
-            <h2 className="font-serif text-xl md:text-2xl text-[#333] tracking-wide text-center">
-              Zubair Rauf
+            <h2 className="font-serif text-xl md:text-xl text-[#333] tracking-wide text-center">
+              Muhammad Zubair Rauf
             </h2>
             <span className="text-[#a67c00] text-sm my-1 font-serif italic">with</span>
             <h2 className="font-serif text-sm md:text-lg text-[#333] mb-2 tracking-wide text-center">

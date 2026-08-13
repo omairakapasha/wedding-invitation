@@ -50,7 +50,7 @@ const HeroSlide = () => {
         {/* BOTTOM — frosted glass block */}
         <motion.div variants={fadeUp} className="bg-[#0f0802]/20 backdrop-blur-md rounded-2xl p-6 pb-9 mx-3 mb-6 text-center text-white border border-white/10">
           <h1 className="font-script text-4xl md:text-5xl m-0 font-normal leading-tight">
-            <GoldText>Zubair Rauf</GoldText>
+            <GoldText>Muhammad Zubair Rauf</GoldText>
           </h1>
           <div className="font-script my-2 text-2xl md:text-3xl text-white/80">
             <GoldText>with</GoldText>
