@@ -11,10 +11,14 @@ const EventSlide = ({
   time, 
   venue, 
   dressCode, 
-  mapsUrl 
+  mapsUrl,
+  bgImage
 }) => {
   return (
-    <div className="event-slide min-h-screen w-full flex items-center justify-center bg-[#fcfaf7] p-6 md:p-8">
+    <div 
+      className="event-slide min-h-screen w-full flex items-center justify-center p-6 md:p-8 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none', backgroundColor: '#fcfaf7' }}
+    >
       <motion.div 
         className="max-w-lg w-full bg-white p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.05)] rounded-[2rem] text-center border border-gray-100"
         initial="hidden"

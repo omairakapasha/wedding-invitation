@@ -27,7 +27,7 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
         sessionStorage.setItem('invited', 'true');
         onComplete();
       }, 1000); // Wait for fade out
-    }, 3600); 
+    }, 3600);
   };
 
   const paperTexture = `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.4'/%3E%3C/svg%3E")`;
@@ -56,7 +56,7 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
           }} />
 
           {/* The Letter (Slides Up) */}
-          <motion.div 
+          <motion.div
             className="absolute left-[5%] right-[5%] bg-[#fcfaf7] shadow-lg flex flex-col items-center justify-start rounded p-4 md:p-8 border border-[#e8dfd5] pointer-events-none"
             style={{ height: '95%', bottom: '5%', zIndex: 10, backgroundBlendMode: 'multiply', backgroundSize: '150px 150px', backgroundImage: paperTexture }}
             initial={{ y: 0 }}
@@ -69,7 +69,7 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
             <h2 className="font-serif text-xl md:text-2xl text-[#333] tracking-wide text-center">
               Zubair Rauf
             </h2>
-            <span className="text-[#a67c00] text-sm my-1 font-serif italic">&</span>
+            <span className="text-[#a67c00] text-sm my-1 font-serif italic">with</span>
             <h2 className="font-serif text-sm md:text-lg text-[#333] mb-2 tracking-wide text-center">
               Daughter of<br />Muhammad Javed
             </h2>
@@ -79,33 +79,33 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
           </motion.div>
 
           {/* Left Flap */}
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
-            style={{ 
-              clipPath: 'polygon(0 0, 50% 50%, 0 100%)', 
-              zIndex: 20, 
+            style={{
+              clipPath: 'polygon(0 0, 50% 50%, 0 100%)',
+              zIndex: 20,
               backgroundBlendMode: 'multiply',
               backgroundSize: '150px 150px, auto',
               backgroundImage: `${paperTexture}, linear-gradient(to right, #efe3d6 0%, #e2d2c3 30%, #c4b09e 50%, transparent 50%)`
             }}
           />
           {/* Right Flap */}
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
-            style={{ 
-              clipPath: 'polygon(100% 0, 50% 50%, 100% 100%)', 
-              zIndex: 20, 
+            style={{
+              clipPath: 'polygon(100% 0, 50% 50%, 100% 100%)',
+              zIndex: 20,
               backgroundBlendMode: 'multiply',
               backgroundSize: '150px 150px, auto',
               backgroundImage: `${paperTexture}, linear-gradient(to left, #efe3d6 0%, #e2d2c3 30%, #c4b09e 50%, transparent 50%)`
             }}
           />
           {/* Bottom Flap */}
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
-            style={{ 
-              clipPath: 'polygon(0 100%, 50% 50%, 100% 100%)', 
-              zIndex: 21, 
+            style={{
+              clipPath: 'polygon(0 100%, 50% 50%, 100% 100%)',
+              zIndex: 21,
               backgroundBlendMode: 'multiply',
               backgroundSize: '150px 150px, auto',
               backgroundImage: `${paperTexture}, linear-gradient(to top, #f2e7da 0%, #e2d1bf 30%, #bca590 50%, transparent 50%)`
@@ -113,20 +113,20 @@ export default function EnvelopeIntro({ onComplete, onOpen }) {
           />
 
           {/* Top Flap Container (Rotates open) */}
-          <motion.div 
+          <motion.div
             className="absolute inset-0 origin-top pointer-events-none"
             initial={{ rotateX: 0, zIndex: 25 }}
             animate={opened ? { rotateX: 180, zIndex: 5 } : { rotateX: 0, zIndex: 25 }}
-            transition={{ 
+            transition={{
               rotateX: { duration: 1.4, type: 'tween', ease: 'easeInOut' },
               zIndex: { delay: 0.7, duration: 0 }
             }}
           >
             {/* The clipped paper flap */}
-            <div 
+            <div
               className="absolute inset-0"
-              style={{ 
-                clipPath: 'polygon(0 0, 100% 0, 50% 55%)', 
+              style={{
+                clipPath: 'polygon(0 0, 100% 0, 50% 55%)',
                 backgroundBlendMode: 'multiply',
                 backgroundSize: '150px 150px, auto',
                 backgroundImage: `${paperTexture}, linear-gradient(to bottom, #e5d6c6 0%, #f7ede3 45%, #f7ede3 55%, transparent 55%)`

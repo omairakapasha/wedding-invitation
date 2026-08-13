@@ -40,7 +40,7 @@ const HeroSlide = () => {
             Mr. & Mrs. Abdul Rauf
           </p>
           <p className="text-white/95 text-[10px] md:text-xs tracking-[0.1em] uppercase leading-relaxed">
-            call you to attend the Wedding Ceremony<br />for their Son
+            call you to attend the Wedding Ceremony<br />for their Beloved Son
           </p>
         </motion.div>
 
@@ -53,7 +53,7 @@ const HeroSlide = () => {
             <GoldText>Zubair Rauf</GoldText>
           </h1>
           <div className="font-script my-2 text-2xl md:text-3xl text-white/80">
-            <GoldText>&</GoldText>
+            <GoldText>with</GoldText>
           </div>
           <h1 className="font-script text-4xl md:text-5xl m-0 font-normal leading-tight">
             <GoldText>Daughter of<br />Muhammad Javed</GoldText>

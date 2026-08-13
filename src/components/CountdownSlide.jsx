@@ -4,7 +4,7 @@ import { stagger, fadeUp } from '../animations';
 import { useCountdown } from '../hooks/useCountdown';
 import { GoldText } from './GoldText';
 
-const CountdownSlide = ({ targetDate = '2026-06-19T00:00:00' }) => {
+const CountdownSlide = ({ targetDate = '2026-06-19T00:00:00', bgImage = '/couple2.jpg' }) => {
   const timeLeft = useCountdown(targetDate);
 
   const displayTime = {
@@ -17,7 +17,7 @@ const CountdownSlide = ({ targetDate = '2026-06-19T00:00:00' }) => {
   return (
     <motion.div 
       className="countdown-slide h-screen w-full flex flex-col items-center justify-center bg-cover bg-center text-white"
-      style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/couple2.jpg)' }}
+      style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${bgImage})` }}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-80px' }}
